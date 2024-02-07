@@ -1,0 +1,13 @@
+.active-link{
+    color: #39ccca;
+    margin: 0 12px;
+    transition: all 0.3s;
+}
+.inactive-link{
+    color: #e5e2e2;
+    margin: 0 12px;
+}
+.mui{
+    width: 12px !important;
+    height: 12px !important;
+}
