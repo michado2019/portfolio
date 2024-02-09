@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "./assets/_logo.png";
-import { Email, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
 import "./Navbar.css";
 type Path = "/" | "/blogs";
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar-wrapper bg-[#2d2e2e] py-7 px-12">
+    <div className="navbar-wrapper bg-[#292F36] py-7 px-12">
       <div className="navbar-contents flex items-center justify-between">
         <Link to="/" className="navbar-content1 flex">
           <img src={logo} alt="img" className="mx-[2px] w-12 h-6" />
@@ -34,20 +34,16 @@ const Navbar = () => {
         </div>
         <div className="navbar-content3 flex">
           <div className="flex items-center mx-2 cursor-pointer">
-            <GitHub className="text-[#39ccca] w-2 h-2 mui" />
+            <GitHub className="text-[#12F7D6] w-2 h-2 mui" />
             <h2 className="text-[#fff] mx-[2px] text-[14px]">Github</h2>
           </div>
           <div className="flex items-center mx-2 cursor-pointer">
-            <LinkedIn className="text-[#39ccca] w-2 h-2 mui" />
+            <LinkedIn className="text-[#12F7D6] w-2 h-2 mui" />
             <h2 className="text-[#fff] mx-[2px] text-[14px]">LinkedIn</h2>
           </div>
           <div className="flex items-center mx-2 cursor-pointer">
-            <Twitter className="text-[#39ccca] w-2 h-2 mui" />
+            <Twitter className="text-[#12F7D6] w-2 h-2 mui" />
             <h2 className="text-[#fff] mx-[2px] text-[14px]">Twitter</h2>
-          </div>
-          <div className="flex items-center mx-2 cursor-pointer">
-            <Email className="text-[#39ccca] w-2 h-2 mui" />
-            <h2 className="text-[#fff] mx-[2px] text-[14px]">Email</h2>
           </div>
         </div>
       </div>
