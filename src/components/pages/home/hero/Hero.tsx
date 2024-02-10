@@ -35,7 +35,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="relative bg-[#292F36] pt-7 px-32 h-[100vh]">
+    <div className="relative bg-[#292F36] pt-7 px-32 h-fit hero-wrapper pb-14">
       <div className="absolute top-8 left-5 flex flex-col py-2 px-3 items-center justify-center bg-[#1A1E23] border-[1px] border-[#e5e2e2] rounded-[24px]">
         <a href="">
           <DashboardOutlined className="text-[#e5e2e2] my-2 hero-mui" />
@@ -57,8 +57,9 @@ const Hero = () => {
         </a>
       </div>
       <div className="flex flex-col justify-between">
-        <div className="flex items-start">
-          <div className="px-3 mr-16 mt-28 pb-7 pt-4 flex flex-col justify-between border-[2px] border-[#fff] rounded-tl-[120px] rounded-br-[120px]">
+        <div className="flex items-start hero-flex1">
+          <h1 className="text-[#98FAEC] text-[48px] dev">Developer</h1>
+          <div className="dev-info px-3 mr-16 mt-28 pb-7 pt-4 flex flex-col justify-between border-[2px] border-[#fff] rounded-tl-[120px] rounded-br-[120px] dev1">
             <div className="">
               <div className="flex flex-col items-center justify-between">
                 <img
@@ -113,8 +114,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col items-start justify-between">
-            <h1 className="text-[#98FAEC] text-[48px]">Developer</h1>
-            <div className="flex items-start justify-between mt-12">
+            <h1 className="text-[#98FAEC] text-[48px] dev2">Developer</h1>
+            <div className="flex items-start justify-between mt-12 dev3">
               <div className="flex flex-col flex-start">
                 <div className="flex flex-col flex-start">
                   <img src={tag1} alt="img" className="w-6 h-2" />
@@ -129,7 +130,7 @@ const Hero = () => {
                       </span>
                       <br />
                       <span className="text-white text-[32px]">
-                        Full-stack developer
+                        Front-end developer
                       </span>
                     </h1>
                   </div>
@@ -144,23 +145,23 @@ const Hero = () => {
                   <img src={tag4} alt="img" className="w-6 h-2" />
                 </div>
                 <div className="flex items-center">
-                  <h2 className="text-[#12f7d6] text-[28px] mr-3">
+                  <h2 className="text-[#12f7d6] text-[28px] mr-3 talk">
                     Let’s talk
                   </h2>
                   <EmailOutlined className="text-[#12f7d6] my-2 talk-mui p-1 bg-[#8b8b8b] rounded-full" />
                 </div>
               </div>
-              <div className="bg-[#1A1E23] rounded-[56px] p-4 ml-16">
+              <div className="bg-[#1A1E23] rounded-[56px] p-4 ml-16 experience">
                 {exp.map((each) => {
                   return (
                     <div
                       key={each.id}
-                      className="flex items-center mb-3 pt-4 pb-2"
+                      className="flex items-center mb-3 pt-7 pb-5"
                     >
                       <h2 className="text-[#12f7d6] text-[24px] mr-3">
                         {each.number}
                       </h2>
-                      <p className="text-[#c2c2c2] text-[12px]">{each.label}</p>
+                      <p className="text-[#c2c2c2] text-[14px]">{each.label}</p>
                     </div>
                   );
                 })}

@@ -12,3 +12,49 @@
   width: 20px !important;
   height: 20px !important;
 }
+.dev {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .hero-wrapper {
+    padding: 0 64px !important;
+  }
+  .hero-flex1 {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+  }
+  .dev {
+    display: block;
+  }
+  .dev1 {
+    margin-top: 28px !important;
+    margin-right: 0 !important;
+    padding: inherit 20px;
+  }
+  .dev2 {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .hero-wrapper {
+    padding: 0 20px !important;
+  }
+}
+@media (max-width: 575px) {
+  .hero-wrapper {
+    padding: 0 20px !important;
+  }
+  .dev3 {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .talk{
+    margin-right: 0;
+  }
+  .experience {
+    margin-left: 0 !important;
+    margin-top: 40px;
+  }
+}
