@@ -36,7 +36,7 @@ const Hero = () => {
   ];
   return (
     <div className="relative bg-[#292F36] pt-7 px-32 h-fit hero-wrapper pb-14">
-      <div className="absolute top-8 left-5 flex flex-col py-2 px-3 items-center justify-center bg-[#1A1E23] border-[1px] border-[#e5e2e2] rounded-[24px]">
+      <div className="sideLink absolute top-8 left-5 flex flex-col py-2 px-3 items-center justify-center bg-[#1A1E23] border-[1px] border-[#e5e2e2] rounded-[24px]">
         <a href="">
           <DashboardOutlined className="text-[#e5e2e2] my-2 hero-mui" />
         </a>

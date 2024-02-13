@@ -1,9 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "./assets/_logo.png";
-import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { CancelOutlined, GitHub, LinkedIn, MenuOutlined, Twitter } from "@mui/icons-material";
 import "./Navbar.css";
 type Path = "/" | "/blogs";
-const Navbar = () => {
+type ToggledType = {
+  isOpened: boolean;
+  setIsOpened: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Navbar = (props: ToggledType) => {
   const location = useLocation();
 
   // Function to determine if a link is active
@@ -11,8 +15,10 @@ const Navbar = () => {
     return location.pathname === path;
   };
 
+  //Props
+  const {isOpened, setIsOpened} = props
   return (
-    <div className="navbar-wrapper bg-[#292F36] py-7 px-12">
+    <div className="navbar-wrapper bg-[#292F36] py-7 px-12 fixed top-0 left-0 w-full">
       <div className="navbar-contents flex items-center justify-between">
         <Link to="/" className="navbar-content1 flex">
           <img src={logo} alt="img" className="mx-[2px] w-12 h-6" />
@@ -33,6 +39,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-content3 flex">
+          <div id="links">
           <div className="flex items-center mx-2 cursor-pointer">
             <GitHub className="text-[#12F7D6] w-2 h-2 mui" />
             <h2 className="text-[#fff] mx-[2px] text-[14px]">Github</h2>
@@ -44,6 +51,20 @@ const Navbar = () => {
           <div className="flex items-center mx-2 cursor-pointer">
             <Twitter className="text-[#12F7D6] w-2 h-2 mui" />
             <h2 className="text-[#fff] mx-[2px] text-[14px]">Twitter</h2>
+          </div>
+          </div>
+          <div id="menu">
+          {
+            isOpened?
+          <div className="flex items-center mx-2 cursor-pointer" onClick={()=> setIsOpened(!isOpened)}>
+            <CancelOutlined className="text-[#12F7D6] w-2 h-2 mui" />
+            <h2 className="text-[#fff] mx-[2px] text-[14px]">Close</h2>
+          </div>:
+            <div className="flex items-center mx-2 cursor-pointer" onClick={()=> setIsOpened(!isOpened)}>
+            <MenuOutlined className="text-[#12F7D6] w-2 h-2 mui" />
+            <h2 className="text-[#fff] mx-[2px] text-[14px]">Menu</h2>
+          </div>
+          }
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 .navbar-wrapper {
   border-bottom: 1px solid #373737;
+  z-index: 1000;
 }
 .active-link {
   color: #12f7d6;
@@ -13,4 +14,28 @@
 .mui {
   width: 12px !important;
   height: 12px !important;
+}
+#links {
+  display: flex;
+}
+#menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  #links {
+    display: none;
+  }
+  #menu {
+    display: flex;
+  }
+}
+@media (max-width: 575px) {
+  .navbar-wrapper {
+    padding: 30px 20px !important;
+  }
+}
+@media (max-width: 480px) {
+  .active-link, .inactive-link {
+    display: none;
+  }
 }

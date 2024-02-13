@@ -1,3 +1,4 @@
+
 .hero-mui {
   width: 15px !important;
   height: 15px !important;
@@ -44,6 +45,9 @@
 @media (max-width: 575px) {
   .hero-wrapper {
     padding: 0 20px !important;
+  }
+  .sideLink{
+    display: none !important;
   }
   .dev3 {
     flex-direction: column;

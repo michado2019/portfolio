@@ -2,7 +2,7 @@ import Hero from "./hero/Hero"
 
 const Home = () => {
   return (
-    <div>
+    <div className="mt-[80px]">
         <Hero />
     </div>
   )

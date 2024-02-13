@@ -1,0 +1,8 @@
+.smallScreenNavbar-wrapper{
+    z-index: 999;
+    width: 100%;
+}
+.smallNavbar-links{
+    display: flex;
+    flex-direction: column;
+}
