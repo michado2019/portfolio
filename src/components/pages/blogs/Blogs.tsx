@@ -1,7 +1,7 @@
 
 const Blogs = () => {
   return (
-    <div>Blogs</div>
+    <div className="mt-[80px]">Blogs</div>
   )
 }
 
