@@ -65,15 +65,15 @@ const SmallScreenNavbar = (props: ToggledType) => {
             >
               <BookOutlined className="text-[#12F7D6] w-7 h-5 mui2" /> Blogs
             </Link>
-            <div className="flex items-center mx-2 cursor-pointer">
+            <div className="flex items-center mx-2 cursor-pointer" onClick={toggleMenu}>
               <GitHub className="text-[#12F7D6] w-5 h-5 mui" />
               <h2 className="text-[#1A1E23] mx-1 text-[20px]">GitHub</h2>
             </div>
-            <div className="flex items-center mx-2 cursor-pointer">
+            <div className="flex items-center mx-2 cursor-pointer" onClick={toggleMenu}>
               <LinkedIn className="text-[#12F7D6] w-5 h-5 mui" />
               <h2 className="text-[#1A1E23] mx-1 text-[20px]">LinkedIn</h2>
             </div>
-            <div className="flex items-center mx-2 cursor-pointer">
+            <div className="flex items-center mx-2 cursor-pointer" onClick={toggleMenu}>
               <Twitter className="text-[#12F7D6] w-5 h-5 mui" />
               <h2 className="text-[#1A1E23] mx-1 text-[20px]">Twitter</h2>
             </div>
