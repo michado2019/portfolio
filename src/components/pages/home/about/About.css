@@ -1,0 +1,26 @@
+@media (max-width: 1100px) {
+  .about-wrapper {
+    padding: 40px 64px !important;
+  }
+}
+@media (max-width: 940px) {
+  .scroll-img{
+    display: none;
+  }
+  .about-text {
+    width: 100% !important;
+  }
+  .about-img {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .about-wrapper {
+    padding: 40px 20px !important;
+  }
+}
+@media (max-width: 375px) {
+  .about-title {
+    font-size: 20px !important;
+  }
+}

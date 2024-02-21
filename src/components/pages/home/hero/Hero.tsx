@@ -138,7 +138,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col flex-start mt-7">
                   <img src={tag3} alt="img" className="w-5 h-2" />
-                  <div className="my-3 text-[#c2c2c2] text-[14px]">
+                  <div className="my-3 text-[#fff] text-[14px]">
                     I help business grow by crafting amazing web experiences. If
                     you’re looking for a developer that likes to get stuff done,
                   </div>
