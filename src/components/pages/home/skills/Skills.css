@@ -1,0 +1,33 @@
+@media (max-width: 940px) {
+  .scroll-img {
+    display: none;
+  }
+  .code-img {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .skills-wrapper {
+    height: fit-content !important;
+  }
+  .icons {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 575px) {
+  .skills-cards {
+    flex-direction: column !important;
+  }
+  .skill-cards-div {
+    min-width: 260px !important;
+    margin: 28px 0 !important;
+  }
+  .icons-div {
+    margin: 20px !important;
+  }
+}
+@media (max-width: 319px) {
+  .skill-cards-div {
+    min-width: 100% !important;
+  }
+}
